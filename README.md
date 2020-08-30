@@ -7,8 +7,6 @@
 <td><img src="https://i.ibb.co/KjnDSpg/main-thubnail.jpg"></td>
 </table>
 
-<br>
-
 ## 💠 Dependencies <br>
 ### ✔️Packages used:<br>
 🔹 flutter_svg : [link](https://pub.dev/packages/flutter_svg)<br>
