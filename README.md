@@ -14,9 +14,11 @@
 </table>
 <br>
 
-**Things to be added: -** <br>
- Dark mode
- Further pages
+## Things to be added: - <br>
+ Dark mode<br>
+ Sub Pages<br>
+ 
+ 
 
 
 
@@ -36,5 +38,8 @@
 
 
 **Eat, Sleep, CODE, Repeat!**
+
+
+
 
 
