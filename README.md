@@ -1,4 +1,4 @@
-<h1 align='center'> <img src="https://giphy.com/gifs/video-youtube-new-SwmtomKcvF9XnJRgt7" width="40px">  Future YouTube Concept UI</h1> <br>
+<h1 align='center'> Future YouTube Concept UI</h1> <br>
 
 
 
