@@ -1,16 +1,12 @@
 <h1 align='center'> Future YouTube Concept UI   &nbsp  <img src="https://i.ibb.co/zb54Sds/yt.gif" width="150px"> </h1> <br>
 
 
-
-**Screenshots: -** <br>
-
+## 🖼️ Final UI <br>
 
 <table>
-  <tr>
-<td><img src="https://i.ibb.co/Jy997gb/Screenshot-20200813-105041.png" width="300"></td>
-<td><img src="https://i.ibb.co/HCRrbw4/Screenshot-20200813-105102.png" width="300"></td>
-</tr>
+<td><img src="https://i.ibb.co/KjnDSpg/main-thubnail.jpg"></td>
 </table>
+
 <br>
 
 ## 💠 Dependencies <br>
