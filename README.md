@@ -14,12 +14,10 @@
 </table>
 <br>
 
-## Things to be added: - <br>
- Dark mode<br>
- Sub Pages<br>
  
- 
-
+## 🚀 Things to be added:
+▶️  Dark mode<br/>
+▶️  Sub Pages<br/>
 
 
 
