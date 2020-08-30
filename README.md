@@ -14,6 +14,12 @@
 </table>
 <br>
 
+**Things to be added: -** <br>
+ Dark mode
+ Further pages
+
+
+
 
 -----------------------------------------------------------------
 
