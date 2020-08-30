@@ -25,7 +25,7 @@ List<YoutubeModel> youtubeData = [
   YoutubeModel(
     title: "Future Youtube UI-Concept by SAHQ",
     thumbNail:
-        "https://i.ibb.co/VCcCK1q/536592b8fb1c511804017fb7f853157b.jpg",
+        "https://cutewallpaper.org/21/minimal-nature-wallpaper/Minimal-Wallpaper-Phone-Elegant-Nature-Wallpaper-Minimalist-.jpg=",
     publishedTime: "10 hour ago",
     channelTitle: "SAHQ",
     channelAvatar: "https://i.ibb.co/x3M3fgY/sahqchannel.png",
