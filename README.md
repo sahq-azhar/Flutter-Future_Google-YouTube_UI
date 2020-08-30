@@ -42,7 +42,7 @@
 
 
 
-### Eat, Sleep, CODE, Repeat!**
+### Eat, Sleep, CODE, Repeat!
 
 
 
