@@ -14,13 +14,14 @@
 </table>
 <br>
 
-### Dependencies <br>
+### 💠 Dependencies <br>
 #### ✔️Packages used:<br>
 🔹 flutter_svg : [link](https://pub.dev/packages/flutter_svg)<br>
 🔹 provider : [link](https://pub.dev/packages/provider)<br>
 🔹 curved_navigation_bar : [link](https://pub.dev/packages/curved_navigation_bar)<br>
 🔹 flutter_custom_clippers : [link](https://pub.dev/packages/flutter_custom_clippers)<br>
 🔹 flutter_launcher_icons : [link](https://pub.dev/packages/flutter_launcher_icons)<br>
+<br>
 
 ### 🚀 Things currently working on:
 ▶️  Dark mode<br/>
