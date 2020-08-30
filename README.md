@@ -22,7 +22,7 @@
 🔹 flutter_custom_clippers : [link](https://pub.dev/packages/flutter_custom_clippers)<br>
 🔹 flutter_launcher_icons : [link](https://pub.dev/packages/flutter_launcher_icons)<br>
 
-## 🚀 Things to be added:
+### 🚀 Things currently working on:
 ▶️  Dark mode<br/>
 ▶️  Sub Pages<br/>
 
