@@ -21,6 +21,8 @@
 🔹 curved_navigation_bar : [link](https://pub.dev/packages/curved_navigation_bar)<br>
 🔹 flutter_custom_clippers : [link](https://pub.dev/packages/flutter_custom_clippers)<br>
 🔹 flutter_launcher_icons : [link](https://pub.dev/packages/flutter_launcher_icons)<br>
+#### ✔️Other Links:<br>
+🔹 Custom Icons : [link](https://medium.com/flutterpub/how-to-use-custom-icons-in-flutter-834a079d977)<br>
 <br>
 
 ### 🚀 Things currently working on:
