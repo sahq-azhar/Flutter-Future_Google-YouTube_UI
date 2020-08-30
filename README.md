@@ -1,4 +1,4 @@
-<h1 align='center'> Future YouTube Concept UI   &nbsp  <img src="https://raw.githubusercontent.com/sahq-azhar/Flutter-Future_Google-YouTube_UI/master/yt.gif?token=AKLCMOSZOUVRX3Q4TOTYJ2C7JO6OU" width="200px"></h1> <br>
+<h1 align='center'> Future YouTube Concept UI   &nbsp  <img src="https://raw.githubusercontent.com/sahq-azhar/Flutter-Future_Google-YouTube_UI/master/yt.gif" width="200px"> </h1> <br>
 
 
 
