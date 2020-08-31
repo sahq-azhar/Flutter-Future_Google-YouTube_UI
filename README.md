@@ -16,6 +16,8 @@
 🔹 flutter_launcher_icons : [link](https://pub.dev/packages/flutter_launcher_icons)<br>
 ### ✔️Other Links:<br>
 🔹 Custom Icons : [link](https://medium.com/flutterpub/how-to-use-custom-icons-in-flutter-834a079d977)<br>
+### ✔️Font used:<br>
+🔹 ProductSans from Google
 ## 🚀 Modules currently under development:
 ▶️  Dark mode<br/>
 ▶️  Sub Pages<br/>
