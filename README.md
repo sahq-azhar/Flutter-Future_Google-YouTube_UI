@@ -1,23 +1,26 @@
-<h1 align='center'>Future YouTube Concept UI</h1> <br>
+<h1 align='center'> YouTube Concept UI   &nbsp  <img src="https://i.ibb.co/zb54Sds/yt.gif" width="150px"> </h1> <br>
 
 
-
-
-**Screenshots: -** <br>
-
+## 🖼️ Final UI <br>
 
 <table>
-  <tr>
-<td><img src="https://i.ibb.co/Jy997gb/Screenshot-20200813-105041.png" width="300"></td>
-<td><img src="https://i.ibb.co/HCRrbw4/Screenshot-20200813-105102.png" width="300"></td>
-</tr>
+<td><img src="https://i.ibb.co/KjnDSpg/main-thubnail.jpg"></td>
 </table>
-<br>
 
-**Things to be added: -** <br>
- Dark mode
- Further pages
-
+## 💠 Dependencies <br>
+### ✔️Packages used:<br>
+🔹 flutter_svg : [link](https://pub.dev/packages/flutter_svg)<br>
+🔹 provider : [link](https://pub.dev/packages/provider)<br>
+🔹 curved_navigation_bar : [link](https://pub.dev/packages/curved_navigation_bar)<br>
+🔹 flutter_custom_clippers : [link](https://pub.dev/packages/flutter_custom_clippers)<br>
+🔹 flutter_launcher_icons : [link](https://pub.dev/packages/flutter_launcher_icons)<br>
+### ✔️Other Links:<br>
+🔹 Custom Icons : [link](https://medium.com/flutterpub/how-to-use-custom-icons-in-flutter-834a079d977)<br>
+### ✔️Font used:<br>
+🔹 ProductSans from Google
+## 🚀 Modules currently under development:
+▶️  Dark mode<br/>
+▶️  Sub Pages<br/>
 
 
 
@@ -35,6 +38,9 @@
 
 
 
-**Eat, Sleep, CODE, Repeat!**
+### Eat, Sleep, CODE, Repeat!
+
+
+
 
 
