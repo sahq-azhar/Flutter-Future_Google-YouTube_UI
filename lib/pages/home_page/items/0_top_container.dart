@@ -33,6 +33,13 @@ class TopContainer extends StatelessWidget {
                 bottomLeft: Radius.circular(38), //36 likhewa tha
                 bottomRight: Radius.circular(38),
               ),
+              boxShadow: [
+                BoxShadow(
+                  offset: Offset(0, 10),
+                  blurRadius: 8,
+                  color: kPrimaryColor.withOpacity(0.4),
+                ),
+              ],
             ),
             child: Row(
               children: <Widget>[
@@ -70,13 +77,6 @@ class TopContainer extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20), //search bar ka
-                boxShadow: [
-                  BoxShadow(
-                    offset: Offset(0, 10),
-                    blurRadius: 10,
-                    color: kPrimaryColor.withOpacity(0.3),
-                  ),
-                ],
               ),
               child: Row(
                 children: <Widget>[

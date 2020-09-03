@@ -53,12 +53,12 @@ class Recommendedvideos extends StatelessWidget {
   Widget _buildPortraitList(BuildContext context, int index) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      padding: const EdgeInsets.fromLTRB(5, 0, 5, 10),
+      padding: const EdgeInsets.fromLTRB(5, 0, 5, 13),
       child: Column(
         children: <Widget>[
           Card(
             shadowColor: Colors.black,
-            elevation: 10,
+            elevation: 11,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15.0),
             ),

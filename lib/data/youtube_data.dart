@@ -25,7 +25,7 @@ List<YoutubeModel> youtubeData = [
   YoutubeModel(
     title: "Future Youtube UI-Concept by SAHQ",
     thumbNail:
-        "https://cutewallpaper.org/21/minimal-nature-wallpaper/Minimal-Wallpaper-Phone-Elegant-Nature-Wallpaper-Minimalist-.jpg=",
+        "https://i.ibb.co/KjnDSpg/main-thubnail.jpg",
     publishedTime: "10 hour ago",
     channelTitle: "SAHQ",
     channelAvatar: "https://i.ibb.co/x3M3fgY/sahqchannel.png",
@@ -52,13 +52,13 @@ List<YoutubeModel> youtubeData = [
     viewCount: "53M views",
   ),
   YoutubeModel(
-    title: "Future Youtube UI-Concept by SAHQ",
+    title: "From paper to code- Youtube UI-Concept by SAHQ",
     thumbNail:
     "https://i2.wp.com/www.orphicpixel.com/wp-content/uploads/2013/08/minimal-wallpaper-01.png?fit=550%2C344&ssl=1",
-    publishedTime: "10 hour ago",
+    publishedTime: "5 hour ago",
     channelTitle: "SAHQ",
     channelAvatar: "https://i.ibb.co/x3M3fgY/sahqchannel.png",
-    viewCount: "1B views",
+    viewCount: "10M views",
   ),
   YoutubeModel(
     title: "Google reacts to SAHQ-YouTube UI concept",

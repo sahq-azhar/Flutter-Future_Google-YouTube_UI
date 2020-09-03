@@ -132,7 +132,7 @@ class DetailsScreen extends StatelessWidget {
                       children: <Widget>[
                         Card(
                           shadowColor: Colors.black,
-                          elevation: 10,
+                          elevation: 11,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15.0),
                           ),
@@ -145,7 +145,7 @@ class DetailsScreen extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10),
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          "https://i.ibb.co/VCcCK1q/536592b8fb1c511804017fb7f853157b.jpg"),
+                                          "https://i.ibb.co/KjnDSpg/main-thubnail.jpg"),
                                       fit: BoxFit.cover),
                                 ),
                               ),
