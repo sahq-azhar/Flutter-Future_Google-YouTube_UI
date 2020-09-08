@@ -1,6 +1,7 @@
 <h1 align='center'> YouTube Concept UI   &nbsp  <img src="https://i.ibb.co/zb54Sds/yt.gif" width="150px"> </h1> <br>
 
-YouTube app concept UI using flutter, this project includes redesigning just the UI/UX part with 3 pages. the main page is the home which includes a search bar followed by a horizontal list with different topics followed by the recommended videos and the channels you have subscribed are displayed.clicking on the icon of the channel will take you the channel page, the bottom of each page includes a new and modified navigation bar. the search bar section on the main page also includes your name with your profile photo clicking on the photo will take you to the profile page.
+YouTube app concept UI is made using flutter, this project includes redesigning just the UI/UX part. the main page is the home which includes a search bar followed by a horizontal list with different topics followed by the recommended videos and the channels you have subscribed are displayed.
+Clicking on the icon of the channel will take you the channel page, the bottom of each page includes a new and modified navigation bar. the search bar section on the main page also includes your name along with your profile photo clicking on it will take you to your profile page.
 
 
 ## 🖼️ Final UI <br>
