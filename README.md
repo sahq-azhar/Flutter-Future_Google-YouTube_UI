@@ -10,10 +10,6 @@ Clicking on the icon of the channel will take you the channel page, the bottom o
 <br>
 
 <table>
-<td><img src="https://i.ibb.co/KjnDSpg/main-thubnail.jpg" width="800"></td>
-</table>
-
-<table>
 <td><img src="https://i.ibb.co/KjnDSpg/main-thubnail.jpg"></td>
 </table>
 
