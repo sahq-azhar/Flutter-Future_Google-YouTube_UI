@@ -6,7 +6,7 @@ YouTube app concept UI using flutter, this includes just the UI part with 3 page
 ## 🖼️ Final UI <br>
 
 
-<img src="/promogif800.gif?raw=true">
+<img src="/promogif_800.gif?raw=true">
 
 
 <table>
