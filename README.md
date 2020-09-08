@@ -2,6 +2,11 @@
 
 YouTube app concept UI using flutter, this includes just the UI part with 3 pages. the main page is the home which includes search bar .............................. At the bottom featured plans list. On the details page, a big image with its 4 icons on the right side also add to the cart button.
 
+
+<img src="https://i.ibb.co/3zpR2jr/promogif.gif" width="150px">
+
+
+
 ## 🖼️ Final UI <br>
 
 <table>
