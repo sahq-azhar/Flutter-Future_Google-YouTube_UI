@@ -34,11 +34,19 @@ class TopContainer extends StatelessWidget {
                 bottomRight: Radius.circular(38),
               ),
               boxShadow: [
-                BoxShadow(
+               /* BoxShadow(
                   offset: Offset(0, 10),
                   blurRadius: 8,
                   color: kPrimaryColor.withOpacity(0.4),
-                ),
+                ),*/ //enabling this is adding to the container and not good results are obtained
+
+                new CustomBoxShadow(
+                    color: kPrimaryColor.withOpacity(0.8),
+                    offset: new Offset(0.0, 0.0),
+                    blurRadius: 8.0,
+                    blurStyle: BlurStyle.outer
+                )
+
               ],
             ),
             child: Row(
@@ -77,6 +85,13 @@ class TopContainer extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20), //search bar ka
+                  boxShadow: [
+                 BoxShadow(
+                  offset: Offset(0, 7),
+                  blurRadius: 3,
+                  color: kPrimaryColor.withOpacity(0.2),
+                ),
+                ]
               ),
               child: Row(
                 children: <Widget>[
@@ -105,5 +120,32 @@ class TopContainer extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+
+
+
+class CustomBoxShadow extends BoxShadow {
+  final BlurStyle blurStyle;
+
+  const CustomBoxShadow({
+    Color color = const Color(0xFF000000),
+    final Offset offset,
+    double blurRadius = 0.0,
+    this.blurStyle = BlurStyle.normal,
+  }) : super(color: color, offset: offset, blurRadius: blurRadius);
+
+  @override
+  Paint toPaint() {
+    final Paint result = Paint()
+      ..color = color
+      ..maskFilter = MaskFilter.blur(this.blurStyle, blurSigma);
+    assert(() {
+      if (debugDisableShadows)
+        result.maskFilter = null;
+      return true;
+    }());
+    return result;
   }
 }

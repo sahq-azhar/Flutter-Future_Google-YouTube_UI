@@ -131,7 +131,7 @@ class DetailsScreen extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         Card(
-                          shadowColor: Colors.black,
+                          shadowColor: Colors.black.withBlue(20),
                           elevation: 11,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15.0),
@@ -174,6 +174,62 @@ class DetailsScreen extends StatelessWidget {
                                     ),
                                     subtitle: Text(
                                         "${"SAHQ"} . ${"1B views"} . ${"10 hour ago"}"),
+                                    trailing: Container(
+                                        margin: const EdgeInsets.fromLTRB(
+                                            0, 0, 6, 20),
+                                        //3 dots ka hai
+                                        child: Icon(Icons.more_vert)),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 15),
+                        Card(
+                          shadowColor: Colors.black.withBlue(20),
+                          elevation: 11,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                width: size.width * 0.96,
+                                height: 250.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://i.ibb.co/D91D9Wt/write2code.jpg"),//Thumbnail
+                                      fit: BoxFit.cover),
+                                ),
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: <Widget>[
+                                  ListTile(
+                                    contentPadding:
+                                    const EdgeInsets.fromLTRB(10, 5, 0, 5),
+                                    dense: true,
+                                    leading: IconButton(
+                                      //main yaha hai---iconbutton better than flat button
+                                      // materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                                      padding: EdgeInsets.all(0.0),
+                                      //icon ku bada rakhta ye rakho
+                                      //shape: CircleBorder(side: BorderSide(color: Colors.pink, width: 2.0)),enable this when using floatingactionbutton
+                                      icon: Image.network(
+                                          "https://i.ibb.co/x3M3fgY/sahqchannel.png"),
+
+                                      onPressed: () {},
+                                    ),
+                                    title: Padding(
+                                      padding:
+                                      const EdgeInsets.only(bottom: 4.0),
+                                      child: Text("From paper to code- Youtube UI-Concept by SAHQ"),
+                                    ),
+                                    subtitle: Text(
+                                        "${"SAHQ"} . ${"10M views"} . ${"5 hour ago"}"),
                                     trailing: Container(
                                         margin: const EdgeInsets.fromLTRB(
                                             0, 0, 6, 20),

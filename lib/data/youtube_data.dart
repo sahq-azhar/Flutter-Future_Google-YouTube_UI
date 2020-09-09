@@ -54,7 +54,7 @@ List<YoutubeModel> youtubeData = [
   YoutubeModel(
     title: "From paper to code- Youtube UI-Concept by SAHQ",
     thumbNail:
-    "https://i2.wp.com/www.orphicpixel.com/wp-content/uploads/2013/08/minimal-wallpaper-01.png?fit=550%2C344&ssl=1",
+    "https://i.ibb.co/D91D9Wt/write2code.jpg",
     publishedTime: "5 hour ago",
     channelTitle: "SAHQ",
     channelAvatar: "https://i.ibb.co/x3M3fgY/sahqchannel.png",
