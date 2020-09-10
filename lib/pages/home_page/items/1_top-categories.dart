@@ -12,7 +12,7 @@ class Categories extends StatefulWidget {
 }
 
 class _CategoriesState extends State<Categories> {
-  List<String> categories = ["All", "Trending", "Web Shows", "Tutorials", "Java","Movies", "Android", "Laptops", "Recently uploaded", "Comedy","Aquarium", "Web Series"];
+  List<String> categories = ["All", "Trending", "Web Shows", "Movies", "Java","Tutorials", "Android", "Laptops", "Recently uploaded", "Comedy","Aquarium", "Web Series"];
   // By default first one is selected
   int selectedIndex = 0;
   @override
@@ -54,7 +54,7 @@ class _CategoriesState extends State<Categories> {
           categories[index],
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: selectedIndex == index ? kPrimaryColor.withOpacity(0.8) : Color(0xFFC2C2B5),
+            color: selectedIndex == index ? kPrimaryColor.withOpacity(0.8) : Colors.black.withOpacity(0.45),
           ),
         ),
       ),

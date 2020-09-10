@@ -68,7 +68,7 @@ class _CategoriesState extends State<TopList> {
               _icons[index],
               size: 17,
               // get the color of the icon (dependent of its state)
-              color: selectedIndex == index ? kPrimaryColor.withOpacity(0.8) : Color(0xFFC2C2B5),
+              color: selectedIndex == index ? kPrimaryColor.withOpacity(0.8) : Colors.black.withOpacity(0.6),
             ),
             SizedBox(width: 5),
             Text(
@@ -76,7 +76,7 @@ class _CategoriesState extends State<TopList> {
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
-                color: selectedIndex == index ? kPrimaryColor.withOpacity(0.8) : Color(0xFFC2C2B5),
+                color: selectedIndex == index ? kPrimaryColor.withOpacity(0.8) : Colors.black.withOpacity(0.6),
               ),
             ),
 
