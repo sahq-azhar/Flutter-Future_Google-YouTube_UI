@@ -15,6 +15,7 @@ the bottom of each page includes a new and modified navigation bar with an elega
 <table>
 <td><img src="https://i.ibb.co/BL8gtCj/main-thubnail-fnal-2.jpg"></td>
 </table>
+
 ## 💠 Dependencies <br>
 ### ✔️Packages used:<br>
 🔹 flutter_svg : [link](https://pub.dev/packages/flutter_svg)<br>
