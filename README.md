@@ -12,9 +12,8 @@ the bottom of each page includes a new and modified navigation bar with an elega
 
 <img src="/promonewgif800.gif?raw=true">
 <br>
-
 <table>
-<td><img src="https://i.ibb.co/KjnDSpg/main-thubnail.jpg"></td>
+<td><img src="https://i.ibb.co/BL8gtCj/main-thubnail-fnal-2.jpg"></td>
 </table>
 
 ## 💠 Dependencies <br>
