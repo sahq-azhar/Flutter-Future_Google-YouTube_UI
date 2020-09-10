@@ -31,6 +31,7 @@ dependencies:
   curved_navigation_bar: ^0.3.3
   flutter_custom_clippers: ^1.1.1
   flutter_launcher_icons: ^0.7.5
+  url_launcher: ^5.5.3
   #for changing the app icon
 flutter_icons:
   image_path: "assets/images/logo.png"

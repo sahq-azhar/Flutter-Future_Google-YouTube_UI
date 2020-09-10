@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:future_youtube/constants.dart';
 import 'package:future_youtube/bottom-bar/curved_bottom_bar.dart';
+import 'package:future_youtube/pages/detail_page/tabview.dart';
 
 import '../../pages-size.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DetailsScreen extends StatelessWidget {
   @override
@@ -37,6 +39,44 @@ class DetailsScreen extends StatelessWidget {
                         //youtube thumnail big
                         fit: BoxFit.fitWidth,
                       ),
+                    ),
+                    child: new Stack(
+                      children: <Widget>[
+                        Container(
+                            margin: EdgeInsets.only(left: 240.0, right: 30.0,top: 235),
+                            height: 37,
+                            decoration: BoxDecoration(
+                              color: Colors.black.withOpacity(0.4),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Row(
+                              mainAxisAlignment:
+                              MainAxisAlignment.spaceEvenly,
+                              children: [
+                                IconButton(
+                                  onPressed: launchinsta,
+                                  icon: Image.asset(
+                                      "assets/icons/instagram.png",
+                                      width: 25,
+                                      height: 25),
+                                ),
+                                IconButton(
+                                  onPressed: launchlink,
+                                  icon: Image.asset(
+                                      "assets/icons/linkedin.png",
+                                      width: 26,
+                                      height: 26),
+                                ),
+                                IconButton(
+                                  onPressed: launchtwitter,
+                                  icon: Image.asset(
+                                      "assets/icons/twitter.png",
+                                      width: 25,
+                                      height: 25),
+                                ),
+                              ],
+                            )),
+                      ],
                     ),
                   ),
                   SizedBox(height: 5),
@@ -83,19 +123,55 @@ class DetailsScreen extends StatelessWidget {
                           children: [
                             SizedBox(height: 5),
                             Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "SAHQ",
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .display1
-                                        .copyWith(fontWeight: FontWeight.w900),
-                                  ),
-                                  SizedBox(width: 2),
-                                  Image.asset("assets/images/verify.png",
-                                      width: 18, height: 18),
-                                ]),
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "SAHQ",
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .display1
+                                      .copyWith(fontWeight: FontWeight.w900),
+                                ),
+                                SizedBox(width: 2),
+                                Image.asset("assets/images/verify.png",
+                                    width: 18, height: 18),
+                                SizedBox(width: 35),
+                               //to display links below the image
+                               /* Container(
+                                    height: 37,
+                                    decoration: BoxDecoration(
+                                      color: kPrimaryColor.withOpacity(0.4),
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        IconButton(
+                                          onPressed: _launchURL,
+                                          icon: Image.asset(
+                                              "assets/icons/instagram.png",
+                                              width: 25,
+                                              height: 25),
+                                        ),
+                                        IconButton(
+                                          onPressed: _launchURL,
+                                          icon: Image.asset(
+                                              "assets/icons/facebook.png",
+                                              width: 25,
+                                              height: 25),
+                                        ),
+                                        IconButton(
+                                          onPressed: _launchURL,
+                                          icon: Image.asset(
+                                              "assets/icons/twitter.png",
+                                              width: 25,
+                                              height: 25),
+                                        ),
+                                      ],
+                                    )),*/
+                              ],
+                            ),
                             SizedBox(height: 5),
                             Text(
                               "100.7M subscribers",
@@ -111,28 +187,18 @@ class DetailsScreen extends StatelessWidget {
                             ),
                           ],
                         ),
-
-                        /*Row(
-                          children: [
-                            SizedBox(
-                              width: size.width * .5,
-                              // it just take the 50% width
-                              child: SearchBar(),
-                            ),
-                          ],
-                        ),*/
                       ],
                     ),
                   ),
-                  SizedBox(height: 10),
-                  SizedBox(height: 10),
+                  SizedBox(height: 5),
+                  TopList(),
                   Container(
                     padding: const EdgeInsets.fromLTRB(5, 5, 5, 10),
                     child: Column(
                       children: <Widget>[
                         Card(
-                          shadowColor: Colors.black.withBlue(20),
-                          elevation: 11,
+                          shadowColor: Colors.black,
+                          elevation: 10,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15.0),
                           ),
@@ -154,7 +220,7 @@ class DetailsScreen extends StatelessWidget {
                                 children: <Widget>[
                                   ListTile(
                                     contentPadding:
-                                        const EdgeInsets.fromLTRB(10, 5, 0, 5),
+                                    const EdgeInsets.fromLTRB(10, 5, 0, 5),
                                     dense: true,
                                     leading: IconButton(
                                       //main yaha hai---iconbutton better than flat button
@@ -169,7 +235,7 @@ class DetailsScreen extends StatelessWidget {
                                     ),
                                     title: Padding(
                                       padding:
-                                          const EdgeInsets.only(bottom: 4.0),
+                                      const EdgeInsets.only(bottom: 4.0),
                                       child: Text("Future Youtube UI-Concept by SAHQ"),
                                     ),
                                     subtitle: Text(
@@ -187,8 +253,8 @@ class DetailsScreen extends StatelessWidget {
                         ),
                         SizedBox(height: 15),
                         Card(
-                          shadowColor: Colors.black.withBlue(20),
-                          elevation: 11,
+                          shadowColor: Colors.black,
+                          elevation: 10,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15.0),
                           ),
@@ -201,7 +267,7 @@ class DetailsScreen extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10),
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          "https://i.ibb.co/D91D9Wt/write2code.jpg"),//Thumbnail
+                                          "https://i.ibb.co/D91D9Wt/write2code.jpg"),
                                       fit: BoxFit.cover),
                                 ),
                               ),
@@ -249,5 +315,32 @@ class DetailsScreen extends StatelessWidget {
             ),
           ],
         ));
+  }
+}
+
+launchinsta() async {
+  const url = 'https://www.instagram.com/sahq_azhar/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+launchlink() async {
+  const url = 'https://www.linkedin.com/in/syed-azhar-hussain-quadri-492512173';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+launchtwitter() async {
+  const url = 'https://twitter.com/sahq_azhar';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
