@@ -41,12 +41,13 @@ class DetailsScreen extends StatelessWidget {
                       ),
                     ),
                     child: new Stack(
+                      alignment: Alignment.bottomRight,
                       children: <Widget>[
                         Container(
-                            margin: EdgeInsets.only(left: 240.0, right: 30.0,top: 235),
+                            margin: EdgeInsets.only(left: SizeInitialize.defaultSize*25,right: 10),
                             height: 37,
                             decoration: BoxDecoration(
-                              color: Colors.black.withOpacity(0.4),
+                              color: Colors.black.withOpacity(0.5),
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Row(

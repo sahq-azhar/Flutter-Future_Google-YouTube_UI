@@ -90,9 +90,10 @@ class StoriesShortvidsCard extends StatelessWidget {
           ),
         ),
     child: new Stack(
+      alignment: Alignment.bottomCenter,
     children: <Widget>[
       Container(
-        margin: EdgeInsets.only(left: 40.0, right: 30.0,top: 135),
+        margin: EdgeInsets.only(bottom: 10),
         height: defaultSize * 5, //140
         width: defaultSize * 5,
         decoration: BoxDecoration(
