@@ -24,6 +24,7 @@ the bottom of each page includes a new and modified navigation bar with an elega
 🔹 curved_navigation_bar : [link](https://pub.dev/packages/curved_navigation_bar)<br>
 🔹 flutter_custom_clippers : [link](https://pub.dev/packages/flutter_custom_clippers)<br>
 🔹 flutter_launcher_icons : [link](https://pub.dev/packages/flutter_launcher_icons)<br>
+🔹 url_launcher: : [link](https://pub.dev/packages/url_launcher)<br>
 ### ✔️Other Links:<br>
 🔹 Custom Icons : [link](https://medium.com/flutterpub/how-to-use-custom-icons-in-flutter-834a079d977)<br>
 ### ✔️Font used:<br>
