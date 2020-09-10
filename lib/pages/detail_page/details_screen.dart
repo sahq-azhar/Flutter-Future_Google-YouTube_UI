@@ -90,36 +90,6 @@ class DetailsScreen extends StatelessWidget {
                         SizedBox(height: 10),
                         SizedBox(height: 10),
                         Column(
-                          children: [
-                            SizedBox(height: 10),
-                            Container(
-                              height: defaultSize * 7, //140
-                              width: defaultSize * 7,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(
-                                  color: kPrimaryColor,
-                                  width: defaultSize * 0.2, //8
-                                ),
-                                image: DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: AssetImage("assets/images/sahq.jpg"),
-                                ),
-                              ),
-                            ),
-                            SizedBox(height: 5),
-                            Text(
-                              "SUBSCRIBE",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 10),
-                        SizedBox(height: 10),
-                        SizedBox(height: 10),
-                        Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             SizedBox(height: 5),
@@ -183,15 +153,50 @@ class DetailsScreen extends StatelessWidget {
                               width: size.width * .7,
                               // it just take 70% of total width
                               child: Text(
-                                "I am a programmer and robotic enthusiast , also know as the future developer",
+                                "I am a programmer and a robotic enthusiast, coding my life.. ",
                               ),
                             ),
                           ],
                         ),
+                        Column(
+                          children: [
+                            SizedBox(height: 10),
+                            Container(
+                              height: defaultSize * 7, //140
+                              width: defaultSize * 7,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: kPrimaryColor,
+                                  width: defaultSize * 0.2, //8
+                                ),
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage("assets/images/sahq.jpg"),
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              "SUBSCRIBE",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.red),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        SizedBox(height: 10),
                       ],
                     ),
                   ),
-                  SizedBox(height: 5),
+                  SizedBox(height: 3),
+                  const Divider(
+                    color: Colors.black38,
+                    thickness: 1,
+                    indent: 20,
+                    endIndent: 20,
+                  ),
                   TopList(),
                   Container(
                     padding: const EdgeInsets.fromLTRB(5, 5, 5, 10),
