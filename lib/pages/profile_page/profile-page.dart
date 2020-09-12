@@ -95,130 +95,139 @@ Widget _myListView(BuildContext context) {
         ),
       ),
       SizedBox(height: 10),
-        Card(
-          shadowColor: Colors.black,
-          elevation: 10,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0),
+        Container(
+          padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
+          child: Column(
+            children: [
+              Card(
+                shadowColor: Colors.black,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child:ListTile(
+                    title: Text('Your Channel'),
+                    leading:
+                    SvgPicture.asset("assets/icons/user.svg", width: 24, height: 24),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {}),),
+              SizedBox(height: 4),
+              Card(
+                shadowColor: Colors.black,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child: ListTile(
+                    leading: SvgPicture.asset("assets/icons/develop.svg",
+                        width: 24, height: 24),
+                    title: Text('Time watched'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {}),
+              ),
+              SizedBox(height: 4),
+              Card(
+                shadowColor: Colors.black,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child:ListTile(
+                    leading: SvgPicture.asset("assets/icons/youtube.svg",
+                        width: 24, height: 24),
+                    title: Text('Get YouTube Premium'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {}),
+              ),
+              SizedBox(height: 4),
+              Card(
+                shadowColor: Colors.black,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child:ListTile(
+                    leading: SvgPicture.asset("assets/icons/dollar.svg",
+                        width: 24, height: 24),
+                    title: Text('Paid memberships'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {}),
+              ),
+              SizedBox(height: 4),
+              Card(
+                shadowColor: Colors.black,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child:ListTile(
+                    leading: SvgPicture.asset("assets/icons/switch.svg",
+                        width: 24, height: 24),
+                    title: Text('Switch Account'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {}),
+              ),
+              SizedBox(height: 4),
+              Card(
+                shadowColor: Colors.black,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child:ListTile(
+                    leading: SvgPicture.asset("assets/icons/incognito.svg",
+                        width: 24, height: 24),
+                    title: Text('Turn on Incognito'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {}),
+              ),
+              SizedBox(height: 4),
+              Card(
+                shadowColor: Colors.black,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child:ListTile(
+                    title: Text('Your data in YouTube'),
+                    leading: SvgPicture.asset("assets/icons/userdata.svg",
+                        width: 24, height: 24),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {}),
+              ),
+              SizedBox(height: 20),
+              Card(
+                shadowColor: Colors.black,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child:ListTile(
+                    leading: SvgPicture.asset("assets/icons/question.svg",
+                        width: 24, height: 24),
+                    title: Text('Help and Feedback'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {}),
+              ),
+              SizedBox(height: 4),
+              Card(
+                shadowColor: Colors.black,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child:ListTile(
+                    leading:
+                    SvgPicture.asset("assets/icons/gear.svg", width: 24, height: 24),
+                    title: Text('Settings'),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {}),
+              ),
+            ],
           ),
-      child:ListTile(
-          title: Text('Your Channel'),
-          leading:
-              SvgPicture.asset("assets/icons/user.svg", width: 24, height: 24),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {}),),
-      SizedBox(height: 4),
-    Card(
-      shadowColor: Colors.black,
-      elevation: 10,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15.0),
-      ),
-      child: ListTile(
-          leading: SvgPicture.asset("assets/icons/develop.svg",
-              width: 24, height: 24),
-          title: Text('Time watched'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {}),
-    ),
-      SizedBox(height: 4),
-  Card(
-  shadowColor: Colors.black,
-  elevation: 10,
-  shape: RoundedRectangleBorder(
-  borderRadius: BorderRadius.circular(15.0),
-  ),
-  child:ListTile(
-          leading: SvgPicture.asset("assets/icons/youtube.svg",
-              width: 24, height: 24),
-          title: Text('Get YouTube Premium'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {}),
-  ),
-      SizedBox(height: 4),
-  Card(
-  shadowColor: Colors.black,
-  elevation: 10,
-  shape: RoundedRectangleBorder(
-  borderRadius: BorderRadius.circular(15.0),
-  ),
-  child:ListTile(
-          leading: SvgPicture.asset("assets/icons/dollar.svg",
-              width: 24, height: 24),
-          title: Text('Paid memberships'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {}),
-  ),
-      SizedBox(height: 4),
-  Card(
-  shadowColor: Colors.black,
-  elevation: 10,
-  shape: RoundedRectangleBorder(
-  borderRadius: BorderRadius.circular(15.0),
-  ),
-  child:ListTile(
-          leading: SvgPicture.asset("assets/icons/switch.svg",
-              width: 24, height: 24),
-          title: Text('Switch Account'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {}),
-  ),
-      SizedBox(height: 4),
-  Card(
-  shadowColor: Colors.black,
-  elevation: 10,
-  shape: RoundedRectangleBorder(
-  borderRadius: BorderRadius.circular(15.0),
-  ),
-  child:ListTile(
-          leading: SvgPicture.asset("assets/icons/incognito.svg",
-              width: 24, height: 24),
-          title: Text('Turn on Incognito'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {}),
-  ),
-      SizedBox(height: 4),
-  Card(
-  shadowColor: Colors.black,
-  elevation: 10,
-  shape: RoundedRectangleBorder(
-  borderRadius: BorderRadius.circular(15.0),
-  ),
-  child:ListTile(
-          title: Text('Your data in YouTube'),
-          leading: SvgPicture.asset("assets/icons/userdata.svg",
-              width: 24, height: 24),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {}),
-  ),
-      SizedBox(height: 20),
-  Card(
-  shadowColor: Colors.black,
-  elevation: 10,
-  shape: RoundedRectangleBorder(
-  borderRadius: BorderRadius.circular(15.0),
-  ),
-  child:ListTile(
-          leading: SvgPicture.asset("assets/icons/question.svg",
-              width: 24, height: 24),
-          title: Text('Help and Feedback'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {}),
-  ),
-      SizedBox(height: 4),
-  Card(
-  shadowColor: Colors.black,
-  elevation: 10,
-  shape: RoundedRectangleBorder(
-  borderRadius: BorderRadius.circular(15.0),
-  ),
-  child:ListTile(
-          leading:
-              SvgPicture.asset("assets/icons/gear.svg", width: 24, height: 24),
-          title: Text('Settings'),
-          trailing: Icon(Icons.keyboard_arrow_right),
-          onTap: () {}),
-  ),
+        ),
+
+
 ],
 
 
