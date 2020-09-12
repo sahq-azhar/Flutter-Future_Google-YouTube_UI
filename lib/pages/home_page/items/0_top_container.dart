@@ -55,12 +55,14 @@ class TopContainer extends StatelessWidget {
                   'Hey, Syed Azhar!',
                   style: Theme.of(context).textTheme.headline5.copyWith(
                       color: Colors.white,
+                      fontSize: size.width*0.057,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Googlesans'),
                 ),
                 Spacer(),
                 new FlatButton(
-                  child: Image.asset("assets/images/logomadesahq.png"),
+                  child: Image.asset("assets/images/logomadesahq.png",
+                   height: size.width*0.57),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -81,7 +83,7 @@ class TopContainer extends StatelessWidget {
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal:  20.0),
               padding: EdgeInsets.symmetric(horizontal:  20.0),
-              height: 53, //search bar ka
+              height: size.height*0.071, //search bar ka
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20), //search bar ka

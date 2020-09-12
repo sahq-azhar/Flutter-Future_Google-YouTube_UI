@@ -73,7 +73,7 @@ class StoriesShortvidsCard extends StatelessWidget {
           bottom: 22,
         ),
         width: size.width * 0.3,
-        height: 195,
+        height: size.height*0.265,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           boxShadow: [

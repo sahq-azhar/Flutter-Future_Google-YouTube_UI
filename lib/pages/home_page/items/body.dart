@@ -24,10 +24,12 @@ class Body extends StatelessWidget {
             Categories(),
             Recommendedvideos(listData: youtubeData.sublist(0,3)),
             Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 SizedBox(width: 10),
                 Text("Stories and Short videos",
-                    style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18)
+                    style: TextStyle(fontWeight: FontWeight.bold,fontSize: size.width*0.043)
                      ),
                 Spacer(),
                 FlatButton(
