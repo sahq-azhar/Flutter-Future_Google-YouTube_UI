@@ -25,7 +25,7 @@ List<YoutubeModel> youtubeData = [
   YoutubeModel(
     title: "Future Youtube UI-Concept by SAHQ",
     thumbNail:
-        "https://i.ibb.co/KjnDSpg/main-thubnail.jpg",
+        "https://i.ibb.co/BL8gtCj/main-thubnail-fnal-2.jpg",
     publishedTime: "10 hour ago",
     channelTitle: "SAHQ",
     channelAvatar: "https://i.ibb.co/x3M3fgY/sahqchannel.png",
