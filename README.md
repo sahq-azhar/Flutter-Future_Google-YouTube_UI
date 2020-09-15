@@ -25,9 +25,6 @@ The footer of each page includes a new and modified navigation bar with an elega
 🔹 Custom Icons : [link](https://medium.com/flutterpub/how-to-use-custom-icons-in-flutter-834a079d977)<br>
 ### ✔️Font used:<br>
 🔹 ProductSans from Google
-## 🚀 Modules currently under development:
-▶️  Dark mode<br/>
-▶️  Sub Pages<br/>
 
 
 
