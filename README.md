@@ -7,7 +7,7 @@ The footer of each page includes a new and modified navigation bar with an elega
 
 ## 🖼️ Final UI <br>
 
-<img src="/promonewgif800.gif?raw=true">
+<img src="/promogif.gif?raw=true">
 <br>
 <table>
 <td><img src="https://i.ibb.co/WGmZZ3p/main-thubnail-ufinal.jpg"></td>
