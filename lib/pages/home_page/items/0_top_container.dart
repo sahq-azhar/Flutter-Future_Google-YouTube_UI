@@ -62,7 +62,7 @@ class TopContainer extends StatelessWidget {
                 Spacer(),
                 new FlatButton(
                   child: Image.asset("assets/images/logomadesahq.png",
-                   height: size.width*0.57),
+                   height: 65),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -83,7 +83,7 @@ class TopContainer extends StatelessWidget {
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal:  20.0),
               padding: EdgeInsets.symmetric(horizontal:  20.0),
-              height: size.height*0.071, //search bar ka
+              height: 53, //search bar ka
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20), //search bar ka

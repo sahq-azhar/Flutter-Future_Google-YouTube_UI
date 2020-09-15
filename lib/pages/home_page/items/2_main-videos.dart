@@ -66,7 +66,7 @@ class Recommendedvideos extends StatelessWidget {
               children: <Widget>[
                 Container(
                   width: size.width * 0.96,
-                  height: size.height*0.35,
+                  height: 250,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     image: DecorationImage(

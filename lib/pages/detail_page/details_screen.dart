@@ -212,12 +212,12 @@ class DetailsScreen extends StatelessWidget {
                             children: <Widget>[
                               Container(
                                 width: size.width * 0.96,
-                                height: size.height*0.35,
+                                height: 250,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          "https://i.ibb.co/KjnDSpg/main-thubnail.jpg"),
+                                          "https://i.ibb.co/BL8gtCj/main-thubnail-fnal-2.jpg"),
                                       fit: BoxFit.cover),
                                 ),
                               ),
@@ -268,7 +268,7 @@ class DetailsScreen extends StatelessWidget {
                             children: <Widget>[
                               Container(
                                 width: size.width * 0.96,
-                                height: size.height*0.35,
+                                height: 250,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   image: DecorationImage(
