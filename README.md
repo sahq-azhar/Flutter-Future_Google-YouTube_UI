@@ -13,6 +13,10 @@ The footer of each page includes a new and modified navigation bar with an elega
 <td><img src="https://i.ibb.co/WGmZZ3p/main-thubnail-ufinal.jpg"></td>
 </table>
 
+<table>
+<td><img src="https://i.ibb.co/6sKCXgy/main-thubnai-XL.jpg"></td>
+</table>
+
 ## 💠 Dependencies <br>
 ### ✔️Packages used:<br>
 🔹 flutter_svg : [link](https://pub.dev/packages/flutter_svg)<br>
