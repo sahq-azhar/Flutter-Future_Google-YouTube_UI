@@ -9,13 +9,6 @@ The footer of each page includes a new and modified navigation bar with an elega
 
 <img src="/promogif.gif?raw=true">
 <br>
-<table>
-<td><img src="https://i.ibb.co/WGmZZ3p/main-thubnail-ufinal.jpg"></td>
-</table>
-
-<table>
-<td><img src="https://i.ibb.co/6sKCXgy/main-thubnai-XL.jpg"></td>
-</table>
 
 <img src="https://i.ibb.co/6sKCXgy/main-thubnai-XL.jpg">
 
