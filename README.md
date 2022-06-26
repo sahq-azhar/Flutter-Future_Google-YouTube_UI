@@ -1,4 +1,4 @@
-<h1 align='center'> YouTube Concept UI   &nbsp  <img src="https://i.ibb.co/zb54Sds/yt.gif" width="150px"> </h1> <br>
+<h1 align='center'> YouTube Concept UI   &nbsp  <img src="https://i.ibb.co/zb54Sds/yt.gif" width="150" /> </h1> <br>
 
 This project is about redesigning the Youtube UI/UX using Flutter. The main page by default is home, the top header houses various elements including profile info, search bar, and a live stream button. Next to it, is the horizontally scrollable list with various categories. The central content of the page consists of the videos from recommended/subscribed channels as a vertical scrollable list maintaining the classic youtube touch. Each video thumbnail is spread out as a polaroid frame.<br>
 Clicking on the channel icon opens up the channel page which contains channel info followed by videos uploaded on that channel. This page also contains categories as a modified scrollable list(Home, Playlist, Community, etc.) <br>
