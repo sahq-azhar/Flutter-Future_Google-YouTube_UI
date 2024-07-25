@@ -10,7 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double defaultSize = SizeInitialize.defaultSize;
+    double? defaultSize = SizeInitialize.defaultSize;
     var size = MediaQuery.of(context).size;
     return Scaffold(
         bottomNavigationBar: MyBottomCurvNavBar(),
@@ -44,15 +44,15 @@ class DetailsScreen extends StatelessWidget {
                       alignment: Alignment.bottomRight,
                       children: <Widget>[
                         Container(
-                            margin: EdgeInsets.only(left: size.width*0.62,right: 10),
+                            margin: EdgeInsets.only(
+                                left: size.width * 0.62, right: 10),
                             height: 37,
                             decoration: BoxDecoration(
                               color: Colors.black.withOpacity(0.5),
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Row(
-                              mainAxisAlignment:
-                              MainAxisAlignment.spaceEvenly,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 IconButton(
                                   onPressed: launchinsta,
@@ -63,17 +63,13 @@ class DetailsScreen extends StatelessWidget {
                                 ),
                                 IconButton(
                                   onPressed: launchlink,
-                                  icon: Image.asset(
-                                      "assets/icons/linkedin.png",
-                                      width: 26,
-                                      height: 26),
+                                  icon: Image.asset("assets/icons/linkedin.png",
+                                      width: 26, height: 26),
                                 ),
                                 IconButton(
                                   onPressed: launchtwitter,
-                                  icon: Image.asset(
-                                      "assets/icons/twitter.png",
-                                      width: 25,
-                                      height: 25),
+                                  icon: Image.asset("assets/icons/twitter.png",
+                                      width: 25, height: 25),
                                 ),
                               ],
                             )),
@@ -100,15 +96,15 @@ class DetailsScreen extends StatelessWidget {
                                   "SAHQ",
                                   style: Theme.of(context)
                                       .textTheme
-                                      .display1
-                                      .copyWith(fontWeight: FontWeight.w900),
+                                      .headlineMedium
+                                      ?.copyWith(fontWeight: FontWeight.w900),
                                 ),
                                 SizedBox(width: 2),
                                 Image.asset("assets/images/verify.png",
                                     width: 18, height: 18),
                                 SizedBox(width: 35),
-                               //to display links below the image
-                               /* Container(
+                                //to display links below the image
+                                /* Container(
                                     height: 37,
                                     decoration: BoxDecoration(
                                       color: kPrimaryColor.withOpacity(0.4),
@@ -162,7 +158,7 @@ class DetailsScreen extends StatelessWidget {
                           children: [
                             SizedBox(height: 10),
                             Container(
-                              height: defaultSize * 7, //140
+                              height: defaultSize! * 7, //140
                               width: defaultSize * 7,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
@@ -226,7 +222,7 @@ class DetailsScreen extends StatelessWidget {
                                 children: <Widget>[
                                   ListTile(
                                     contentPadding:
-                                    const EdgeInsets.fromLTRB(10, 5, 0, 5),
+                                        const EdgeInsets.fromLTRB(10, 5, 0, 5),
                                     dense: true,
                                     leading: IconButton(
                                       //main yaha hai---iconbutton better than flat button
@@ -241,8 +237,9 @@ class DetailsScreen extends StatelessWidget {
                                     ),
                                     title: Padding(
                                       padding:
-                                      const EdgeInsets.only(bottom: 4.0),
-                                      child: Text("Future Youtube UI-Concept by SAHQ"),
+                                          const EdgeInsets.only(bottom: 4.0),
+                                      child: Text(
+                                          "Future Youtube UI-Concept by SAHQ"),
                                     ),
                                     subtitle: Text(
                                         "${"SAHQ"} . ${"1B views"} . ${"10 hour ago"}"),
@@ -282,7 +279,7 @@ class DetailsScreen extends StatelessWidget {
                                 children: <Widget>[
                                   ListTile(
                                     contentPadding:
-                                    const EdgeInsets.fromLTRB(10, 5, 0, 5),
+                                        const EdgeInsets.fromLTRB(10, 5, 0, 5),
                                     dense: true,
                                     leading: IconButton(
                                       //main yaha hai---iconbutton better than flat button
@@ -297,8 +294,9 @@ class DetailsScreen extends StatelessWidget {
                                     ),
                                     title: Padding(
                                       padding:
-                                      const EdgeInsets.only(bottom: 4.0),
-                                      child: Text("From paper to code- Youtube UI-Concept by SAHQ"),
+                                          const EdgeInsets.only(bottom: 4.0),
+                                      child: Text(
+                                          "From paper to code- Youtube UI-Concept by SAHQ"),
                                     ),
                                     subtitle: Text(
                                         "${"SAHQ"} . ${"10M views"} . ${"5 hour ago"}"),

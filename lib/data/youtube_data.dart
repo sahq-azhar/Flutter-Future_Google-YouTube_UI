@@ -1,24 +1,25 @@
 class YoutubeModel {
-  final String title;
-  final String description;
-  final String thumbNail;
-  final String publishedTime;
-  final String channelTitle;
-  final String channelAvatar;
-  final String viewCount;
-  final String likeCount;
-  final String dislikeCount;
+  final String? title;
+  final String? description;
+  final String? thumbNail;
+  final String? publishedTime;
+  final String? channelTitle;
+  final String? channelAvatar;
+  final String? viewCount;
+  final String? likeCount;
+  final String? dislikeCount;
 
-  YoutubeModel(
-      {this.title,
-      this.description,
-      this.thumbNail,
-      this.publishedTime,
-      this.channelTitle,
-      this.channelAvatar,
-      this.viewCount,
-      this.likeCount,
-      this.dislikeCount});
+  YoutubeModel({
+    this.title,
+    this.description,
+    this.thumbNail,
+    this.publishedTime,
+    this.channelTitle,
+    this.channelAvatar,
+    this.viewCount,
+    this.likeCount,
+    this.dislikeCount,
+  });
 }
 
 List<YoutubeModel> youtubeData = [
@@ -29,7 +30,7 @@ List<YoutubeModel> youtubeData = [
     publishedTime: "10 hour ago",
     channelTitle: "SAHQ",
     channelAvatar: "https://i.ibb.co/x3M3fgY/sahqchannel.png",
-    viewCount: "1B views",
+    viewCount: "1B views", description: '', likeCount: '', dislikeCount: '',
   ),
   YoutubeModel(
     title: "Google reacts to SAHQ-YouTube UI concept",
@@ -39,7 +40,7 @@ List<YoutubeModel> youtubeData = [
     channelTitle: "Google",
     channelAvatar:
         "https://www.freepngimg.com/thumb/google/67060-play-photos-search-google-account-png-file-hd.png",
-    viewCount: "10M views",
+    viewCount: "10M views", description: '', likeCount: '', dislikeCount: '',
   ),
   YoutubeModel(
     title: "YouTube thinking of changing it's UI",
@@ -49,7 +50,7 @@ List<YoutubeModel> youtubeData = [
     channelTitle: "YouTube",
     channelAvatar:
         "https://i.ibb.co/cCRTVDN/logoytchannel.png",
-    viewCount: "53M views",
+    viewCount: "53M views", description: '', likeCount: '', dislikeCount: '',
   ),
   YoutubeModel(
     title: "From paper to code- Youtube UI-Concept by SAHQ",
@@ -58,7 +59,7 @@ List<YoutubeModel> youtubeData = [
     publishedTime: "5 hour ago",
     channelTitle: "SAHQ",
     channelAvatar: "https://i.ibb.co/x3M3fgY/sahqchannel.png",
-    viewCount: "10M views",
+    viewCount: "10M views", description: '', likeCount: '', dislikeCount: '',
   ),
   YoutubeModel(
     title: "Google reacts to SAHQ-YouTube UI concept",
@@ -68,16 +69,16 @@ List<YoutubeModel> youtubeData = [
     channelTitle: "Google",
     channelAvatar:
     "https://www.freepngimg.com/thumb/google/67060-play-photos-search-google-account-png-file-hd.png",
-    viewCount: "10M views",
+    viewCount: "10M views", description: '', likeCount: '', dislikeCount: '',
   ),
   YoutubeModel(
     title: "Future Youtube UI-Concept by SAHQ",
     thumbNail:
-    "https://www.androidguys.com/wp-content/uploads/2015/12/forest-patrol.jpg",
+    "https://w0.peakpx.com/wallpaper/274/278/HD-wallpaper-forest-patrol-orange-pink-plum.jpg",
     publishedTime: "13 hours ago",
     channelTitle: "YouTube",
     channelAvatar:
     "https://i.ibb.co/cCRTVDN/logoytchannel.png",
-    viewCount: "53M views",
+    viewCount: "53M views", description: '', likeCount: '', dislikeCount: '',
   ),
 ];

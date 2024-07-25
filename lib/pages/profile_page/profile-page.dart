@@ -23,12 +23,12 @@ class Body extends StatelessWidget {
 }
 
 Widget _myListView(BuildContext context) {
-  double defaultSize = SizeInitialize.defaultSize;
+  double? defaultSize = SizeInitialize.defaultSize;
   return ListView(
 
     children: <Widget>[
       SizedBox(
-        height: defaultSize * 24, // 240//distance between picture and appbar
+        height: defaultSize! * 24, // 240//distance between picture and appbar
         child: Stack(
           children: <Widget>[
             ClipPath(
@@ -244,14 +244,15 @@ AppBar buildAppBar() {
     centerTitle: true,
     title: Text("Profile"),
     actions: <Widget>[
-      FlatButton(
-        onPressed: () {},
-        child: IconButton(
-          icon: SvgPicture.asset("assets/icons/edit.svg",
-              width: 23, height: 23,color: Colors.white,),
-          onPressed: () {},
+      IconButton(
+        icon: SvgPicture.asset(
+          "assets/icons/edit.svg",
+          width: 23,
+          height: 23,
+          color: Colors.white,
         ),
-      ),
+        onPressed: () {},
+      )
     ],
   );
 }

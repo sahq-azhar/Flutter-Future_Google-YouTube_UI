@@ -32,19 +32,22 @@ class Body extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.bold,fontSize: size.width*0.043)
                      ),
                 Spacer(),
-                FlatButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: kPrimaryColor,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                  color: kPrimaryColor,
-                  onPressed: (){},
-                  child: Row( // Replace with a Row for horizontal icon + text
+                  onPressed: () {},
+                  child: Row(
                     children: <Widget>[
-                      Text("Explore",
+                      Text(
+                        "Explore",
                         style: TextStyle(color: Colors.black),
                       ),
                       SizedBox(width: 3),
-                      Icon(Icons.playlist_play),
+                      Icon(Icons.playlist_play, color: Colors.black),
                     ],
                   ),
                 ),

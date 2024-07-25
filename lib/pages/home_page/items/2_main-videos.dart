@@ -2,14 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:future_youtube/data/youtube_data.dart';
 import 'package:future_youtube/pages/detail_page/details_screen.dart';
 
-
 class Recommendedvideos extends StatelessWidget {
   final List<YoutubeModel> listData;
   final bool isMiniList;
   final bool isHorizontalList;
 
-  const Recommendedvideos(
-      {this.listData, this.isMiniList = false, this.isHorizontalList = false});
+  const Recommendedvideos({
+    Key? key,
+    required this.listData,
+    this.isMiniList = false,
+    this.isHorizontalList = false,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -70,8 +73,12 @@ class Recommendedvideos extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     image: DecorationImage(
-                        image: NetworkImage(listData[index].thumbNail),
-                        fit: BoxFit.cover),
+                      image: NetworkImage(
+                        listData[index].thumbNail ??
+                            'https://example.com/default_thumbnail.jpg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 Column(
@@ -86,19 +93,21 @@ class Recommendedvideos extends StatelessWidget {
                         padding: EdgeInsets.all(0.0),
                         //icon ku bada rakhta ye rakho
                         //shape: CircleBorder(side: BorderSide(color: Colors.pink, width: 2.0)),enable this when using floatingactionbutton
-                        icon: Image.network(listData[index].channelAvatar),
+                        icon: Image.network(listData[index].channelAvatar ??
+                            'https://example.com/default_thumbnail.jpg'),
 
                         onPressed: () {
                           if (index == 0)
                             Navigator.of(context).push(MaterialPageRoute<Null>(
                                 builder: (BuildContext context) {
-                                  return DetailsScreen();
-                                }));
+                              return DetailsScreen();
+                            }));
                         },
                       ),
                       title: Padding(
                         padding: const EdgeInsets.only(bottom: 4.0),
-                        child: Text(listData[index].title),
+                        child: Text(listData[index].title ??
+                            'https://example.com/default_thumbnail.jpg'),
                       ),
                       subtitle: Text(
                           "${listData[index].channelTitle} . ${listData[index].viewCount} . ${listData[index].publishedTime}"),
@@ -138,7 +147,10 @@ class Recommendedvideos extends StatelessWidget {
                 ),
               ],
               image: DecorationImage(
-                  image: NetworkImage(listData[index].thumbNail),
+                  image: NetworkImage(
+                    listData[index].thumbNail ??
+                        'https://example.com/default_thumbnail.jpg',
+                  ),
                   fit: BoxFit.cover),
             ),
           ),
@@ -151,7 +163,8 @@ class Recommendedvideos extends StatelessWidget {
                   dense: isMiniList ? true : false,
                   title: Padding(
                     padding: const EdgeInsets.only(bottom: 4.0),
-                    child: Text(listData[index].title),
+                    child: Text(listData[index].title ??
+                        'https://example.com/default_thumbnail.jpg'),
                   ),
                   subtitle: !isMiniList
                       ? Text(
@@ -171,7 +184,8 @@ class Recommendedvideos extends StatelessWidget {
                           /* materialTapTargetSize:
                               MaterialTapTargetSize.shrinkWrap,*/
                           //this is for flat button
-                          icon: Image.network(listData[index].channelAvatar),
+                          icon: Image.network(listData[index].channelAvatar ??
+                              'https://example.com/default_thumbnail.jpg'),
                           onPressed: () {
                             if (index == 0)
                               Navigator.of(context).push(
@@ -203,7 +217,10 @@ class Recommendedvideos extends StatelessWidget {
             height: 188 / 2.2,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: NetworkImage(listData[index].thumbNail),
+                image: NetworkImage(
+                  listData[index].thumbNail ??
+                      'https://example.com/default_thumbnail.jpg',
+                ),
               ),
             ),
           ),
@@ -217,14 +234,16 @@ class Recommendedvideos extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.only(bottom: 4.0),
                       child: Text(
-                        listData[index].title,
+                        listData[index].title ??
+                            'https://example.com/default_thumbnail.jpg',
                         style: TextStyle(fontSize: 12.0),
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
                     Text(
-                      listData[index].channelTitle,
+                      listData[index].channelTitle ??
+                          'https://example.com/default_thumbnail.jpg',
                       style: TextStyle(
                         fontSize: 12.0,
                         color: Colors.grey[600],

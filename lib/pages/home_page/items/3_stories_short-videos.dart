@@ -3,7 +3,7 @@ import '../../../pages-size.dart';
 
 class StoriesShortvids extends StatelessWidget {
   const StoriesShortvids({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -28,7 +28,7 @@ class StoriesShortvids extends StatelessWidget {
             press: () {},
           ),
           StoriesShortvidsCard(
-            image: "https://iphonewalls.net/wp-content/uploads/2014/09/Batman%20Shattered%20Logo%20White%20MInimal%20iPhone%205%20Wallpaper-320x480.jpg",
+            image: "https://4kwallpapers.com/images/walls/thumbs_3t/463.jpg",
             image1: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTcw6IsbsGJg3hj4ziM6pzpNTRLkxfkdCuoTA&usqp=CAU",
             press: () {},
           ),
@@ -51,19 +51,19 @@ class StoriesShortvids extends StatelessWidget {
 
 class StoriesShortvidsCard extends StatelessWidget {
   const StoriesShortvidsCard({
-    Key key,
-    this.image,
-    this.image1,
-    this.press,
+    Key? key,
+    required this.image,
+    required this.image1,
+    required this.press,
   }) : super(key: key);
   final String image;
   final String image1;
-  final Function press;
+  final VoidCallback press;
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    double defaultSize = SizeInitialize.defaultSize;
+    double? defaultSize = SizeInitialize.defaultSize;
     return GestureDetector(
       onTap: press,
       child: Container(
@@ -94,13 +94,13 @@ class StoriesShortvidsCard extends StatelessWidget {
     children: <Widget>[
       Container(
         margin: EdgeInsets.only(bottom: 10),
-        height: defaultSize * 5, //140
-        width: defaultSize * 5,
+        height: defaultSize! * 5, //140
+        width: defaultSize! * 5,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           border: Border.all(
             color: Colors.red,
-            width: defaultSize * 0.2, //8
+            width: defaultSize! * 0.2, //8
           ),
           image: DecorationImage(
             fit: BoxFit.cover,

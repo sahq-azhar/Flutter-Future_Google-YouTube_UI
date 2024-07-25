@@ -18,9 +18,9 @@ class _CategoriesState extends State<Categories> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: SizeInitialize.defaultSize * 1),
+      padding: EdgeInsets.symmetric(vertical: SizeInitialize.defaultSize! * 1),
       child: SizedBox(
-        height: SizeInitialize.defaultSize * 3.5, // 35
+        height: SizeInitialize.defaultSize! * 3.5, // 35
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: categories.length,
@@ -39,16 +39,16 @@ class _CategoriesState extends State<Categories> {
       },
       child: Container(
         alignment: Alignment.center,
-        margin: EdgeInsets.only(left: SizeInitialize.defaultSize * 2),
+        margin: EdgeInsets.only(left: SizeInitialize.defaultSize! * 2),
         padding: EdgeInsets.symmetric(
-          horizontal: SizeInitialize.defaultSize * 1, //20
-          vertical: SizeInitialize.defaultSize * 0.7, //5
+          horizontal: SizeInitialize.defaultSize! * 1, //20
+          vertical: SizeInitialize.defaultSize! * 0.7, //5
         ),
         decoration: BoxDecoration(
             color:
                 selectedIndex == index ? Color(0xFFEFF3EE) : Colors.transparent,
             borderRadius: BorderRadius.circular(
-              SizeInitialize.defaultSize * 1.6, // 16
+              SizeInitialize.defaultSize! * 1.6, // 16
             )),
         child: Text(
           categories[index],

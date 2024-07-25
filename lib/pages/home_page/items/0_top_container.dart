@@ -5,8 +5,8 @@ import '../../../constants.dart';
 
 class TopContainer extends StatelessWidget {
   const TopContainer({
-    Key key,
-    @required this.size,
+    Key? key,
+    required this.size,
   }) : super(key: key);
 
   final Size size;
@@ -53,14 +53,14 @@ class TopContainer extends StatelessWidget {
               children: <Widget>[
                 Text(
                   'Hey, Syed Azhar!',
-                  style: Theme.of(context).textTheme.headline5.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       color: Colors.white,
                       fontSize: size.width*0.057,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Googlesans'),
                 ),
                 Spacer(),
-                new FlatButton(
+                new TextButton(
                   child: Image.asset("assets/images/logomadesahq.png",
                    height: 65),
                   onPressed: () {
@@ -133,7 +133,7 @@ class CustomBoxShadow extends BoxShadow {
 
   const CustomBoxShadow({
     Color color = const Color(0xFF000000),
-    final Offset offset,
+    required final Offset offset,
     double blurRadius = 0.0,
     this.blurStyle = BlurStyle.normal,
   }) : super(color: color, offset: offset, blurRadius: blurRadius);
